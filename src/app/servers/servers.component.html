@@ -1,7 +1,12 @@
-<button class="btn btn-success" [disabled]="!allowNewServer">Add server</button>
+<div class="row">
+	<div class="col-xs-12">
+		<button class="btn btn-success" [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
+	
+		<h3>{{ serverCreationStatus }}</h3>
+		<app-server></app-server>
+		<p>
+		  servers works!
+		</p>
+	</div>
 
-<app-server></app-server>
-
-<p>
-  servers works!
-</p>
+</div>
